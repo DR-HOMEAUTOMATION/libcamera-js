@@ -1,0 +1,20 @@
+{
+  "name": "libcamera-js",
+  "version": "1.0.0",
+  "description": "A lightweight Node.js wrapper for [libcamera](https://libcamera.org/) which is now built into recent versions of raspberry pi os.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DR-HOMEAUTOMATION/libcamera-js.git"
+  },
+  "keywords": [],
+  "author": "Dawson Reschke",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DR-HOMEAUTOMATION/libcamera-js/issues"
+  },
+  "homepage": "https://github.com/DR-HOMEAUTOMATION/libcamera-js#readme"
+}
