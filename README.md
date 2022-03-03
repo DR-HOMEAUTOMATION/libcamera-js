@@ -1,6 +1,29 @@
 # libcamera-js
-A lightweight Node.js wrapper for [libcamera](https://libcamera.org/) which is now built into recent versions of raspberry pi OS. 
+A simple wrapper for [libcamera-apps](https://github.com/raspberrypi/libcamera-apps) (raspbian). Currently supports only libcamera-jpeg functionality, but the goal is to support all libcamera-apps functionality. 
+
 ## Installation
+This library expects you to have already installed `libcamera-apps` 
+
+### Install `libcamera-apps`
+```
+sudo apt-get update
+sudo apt-get upgrade
+sudo apt-get libcamera-apps
+```
+
+#### Enabling the pi camera
+```
+sudo raspi-config 
+- Interface options
+	- Disable Legacy Camera
+- Advanced options
+	- Enable GL Driver
+	- Enable Glamor
+```
+
+### Import
+After you have installed libcamera-apps and enabled the picam if necessary, test libcamera using `libcamera-hello`. You should see a window pop up displaying a preview of the camera. Once you know its working you can install the library using the command below: 
+
 `npm install libcamera-js`
 
 `const libcamera = require('libcamera-js')`
